@@ -33,6 +33,8 @@ function testIpairs()
 
   local sum2 = 0
   local concat2 = ''
+  -- it stops at nil
+  -- need to iterate using index and length (#table) to avoid it
   for i, word in ipairs({'a', 'b', nil, 'c'}) do
     sum2 = sum2 + i
     concat2 = concat2 .. word
