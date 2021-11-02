@@ -2,7 +2,7 @@
   https://luaunit.readthedocs.io/en/latest/
 --]]
 
-lu = require('luaunit')
+lu = require 'luaunit'
 
 function testBasic()
   local a = 1
