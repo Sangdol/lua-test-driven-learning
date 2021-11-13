@@ -17,4 +17,15 @@ function testBasic()
   lu.assertEquals(l1, l2)
 end
 
+function testSuccessFail()
+  if (1 == 1) then
+    lu.success()
+  else
+    lu.fail()
+  end
+
+  lu.successIf(1 == 1)
+  lu.failIf(1 == 2)
+end
+
 os.exit( lu.LuaUnit.run() )

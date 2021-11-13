@@ -5,6 +5,16 @@ function testVariables()
   lu.assertTrue(a == 1 and b == 2)
 end
 
+function testIf()
+  if (a == nil) then
+    lu.success()
+  elseif (a == 1) then
+    lu.fail()
+  else
+    lu.fail()
+  end
+end
+
 function testClosure()
   function adder(v)
     function closure(x) return x+v end
