@@ -15,6 +15,25 @@ function testIf()
   end
 end
 
+-- no default function overloading
+function testOverloading()
+  -- this is not called.
+  function adder()
+    return 0
+  end
+
+  function adder(a, b)
+    if (a == nil and b == nil) then
+      return -1
+    end
+
+    return a + b
+  end
+
+  lu.assertTrue(adder() == -1)
+  lu.assertTrue(adder(1, 2) == 3)
+end
+
 function testClosure()
   function adder(v)
     function closure(x) return x+v end
