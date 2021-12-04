@@ -9,8 +9,11 @@ function testPcall()
     return a + b
   end
 
-  -- pcall returns true or false
-  lu.assertTrue(pcall(add, 1, 2))
+  -- status is boolean true or false
+  -- the second value is a result when status is true.
+  local status, result = pcall(add, 1, 2)
+  lu.assertTrue(status)
+  lu.assertTrue(result == 3)
 end
 
 function testPcallErr()
@@ -21,7 +24,7 @@ function testPcallErr()
   local status, err = pcall(err)
 
   lu.assertFalse(status)
-  lu.assertTrue(err == "error-handling-test.lua:18: attempt to index a nil value (global 'a')")
+  lu.assertTrue(err == "error-handling-test.lua:21: attempt to index a nil value (global 'a')")
 end
 
 function testPcallErrObject()
