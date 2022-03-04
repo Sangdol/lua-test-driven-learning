@@ -5,3 +5,7 @@ end
 function subtract(a, b)
   return a - b
 end
+
+local function localAdd(a, b)
+  return a + b
+end
