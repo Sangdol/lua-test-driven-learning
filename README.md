@@ -6,7 +6,9 @@ Learn Lua writing tests.
 Installation
 ---
 
-This project uses [LuaUnit](https://github.com/bluebird75/luaunit). [LuaRocks](https://luarocks.org/) is a package manager for Lua modules that you can install LuaUnit.
+This project uses [LuaUnit](https://github.com/bluebird75/luaunit) which is a unit testing framework for Lua.
+
+[LuaRocks](https://luarocks.org/) is a package manager that you can install LuaUnit.
 
 ```sh
 brew install luarocks
@@ -39,7 +41,7 @@ Project Structure
 ├── error-handling-test.lua   -- Learning error handling with Lua
 ├── luaunit-test.lua          -- Learning LuaUnit
 ├── table-test.lua            -- Learning Lua table
-├── module-test.lua           -- Learning Lua require 
+├── module-test.lua           -- Learning Lua require
 └── modules                   -- Modules that that are used in module-test.lua
     ├── namespaced.lua
     └── simple.lua
