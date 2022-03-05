@@ -14,7 +14,8 @@ function testSimple()
   lu.assertTrue(localAdd == nil)
 end
 
-m = require('modules.namespaced')
+-- dot and slash both work
+m = require('modules/namespaced')
 
 function testNamespaced()
   lu.assertTrue(m.add(1, 2) == 3)
