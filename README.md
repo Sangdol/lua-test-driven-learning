@@ -18,9 +18,9 @@ luarocks install luaunit
 Running tests
 ---
 
-Lua checks the environment variable `LUA_PATH` to determine the path to look for libraries when [the `require` function](https://www.lua.org/pil/8.1.html) is called.
+Lua checks the environment variable `LUA_PATH` to determine the path to look for libraries when [the require function](https://www.lua.org/pil/8.1.html) is called.
 
-The LuaRocks CLI tool provides [a way to set up `LUA_PATH`](https://github.com/luarocks/luarocks/wiki/Using-LuaRocks#rocks-trees-and-the-lua-libraries-path) so that Lua can use the libraries.
+The LuaRocks CLI tool provides [a way to set up LUA_PATH](https://github.com/luarocks/luarocks/wiki/Using-LuaRocks#rocks-trees-and-the-lua-libraries-path) so that Lua can use the libraries.
 
 ```sh
 # Set environment variables for Lua to load libraries
