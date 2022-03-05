@@ -1,3 +1,7 @@
+--
+-- Lua tables tests
+--
+
 lu = require('luaunit')
 
 function testBasic()

@@ -1,3 +1,7 @@
+--
+-- Lua `require` tests
+--
+
 lu = require('luaunit')
 
 require('modules.simple')

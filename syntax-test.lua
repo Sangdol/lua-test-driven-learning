@@ -1,3 +1,7 @@
+--
+-- Lua Syntax tests
+--
+
 lu = require('luaunit')
 
 function testVariables()
