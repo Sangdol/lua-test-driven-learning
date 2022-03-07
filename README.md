@@ -1,7 +1,7 @@
 Lua Test Driven Learning
 ===
 
-Learn Lua writing tests.
+Learn Lua by writing or reading tests.
 
 Installation
 ---
@@ -30,6 +30,15 @@ eval "$(luarocks path --bin)"
 lua syntax-test.lua
 ```
 
+Or you can use the `test.sh` script:
+```sh
+# Run a test
+./test.sh syntax-test.lua
+
+# Run tests with all Lua files
+./test.sh *lua
+```
+
 Project Structure
 ---
 
@@ -38,6 +47,7 @@ Project Structure
 ├── LICENSE
 ├── README.md
 ├── syntax-test.lua           -- Learning Lua syntax
+├── function-test.lua         -- Learning Lua functions
 ├── error-handling-test.lua   -- Learning error handling with Lua
 ├── luaunit-test.lua          -- Learning LuaUnit
 ├── table-test.lua            -- Learning Lua table
@@ -52,6 +62,7 @@ See also
 
 * [Lua Getting Started](http://www.lua.org/start.html)
 * [Learn X in Y minutes](https://learnxinyminutes.com/docs/lua/)
+* [LuaUnit Documentation](https://luaunit.readthedocs.io/)
 * [Hammerspoon](https://www.hammerspoon.org/)
 
 License

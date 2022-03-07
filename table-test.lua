@@ -10,10 +10,10 @@ function testBasic()
   lu.assertTrue(table["b"] == 2)
 
   local table2 = {a = 1, b = 2}
-  lu.assertTrue(table['a'] == 1)
-  lu.assertTrue(table['b'] == 2)
-  lu.assertTrue(table.a == 1)
-  lu.assertTrue(#table == 0)
+  lu.assertTrue(table2['a'] == 1)
+  lu.assertTrue(table2['b'] == 2)
+  lu.assertTrue(table2.a == 1)
+  lu.assertTrue(#table2 == 0)
 
   local list = {'a', 'b', 'c'}
   lu.assertTrue(list[1] == 'a')
@@ -63,6 +63,7 @@ function testPairs()
   lu.assertEquals(chars, {'a', 'b', 'c'})
 end
 
+-- Organizing functions with table
 function testOrganizingFunctions()
   local funcs = {
     add = function(a, b) return a + b end,
