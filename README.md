@@ -63,6 +63,7 @@ See also
 * [Lua Getting Started](http://www.lua.org/start.html)
 * [Learn X in Y minutes](https://learnxinyminutes.com/docs/lua/)
 * [LuaUnit Documentation](https://luaunit.readthedocs.io/)
+* [Getting started using Lua in Neovim](https://github.com/nanotee/nvim-lua-guide)
 * [Hammerspoon](https://www.hammerspoon.org/)
 
 License
