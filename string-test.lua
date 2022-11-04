@@ -31,4 +31,10 @@ function testRelationalOperators()
   lu.assertTrue(str1 ~= 'Abc')
 end
 
+function testReverse()
+  local str = 'abc'
+
+  lu.assertTrue(string.reverse(str) == 'cba')
+end
+
 os.exit( lu.LuaUnit.run() )
