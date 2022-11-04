@@ -20,4 +20,15 @@ function testSplit()
   lu.assertTrue(t[3] == 'c')
 end
 
+-- Relational Operators
+-- https://www.lua.org/pil/3.2.html
+function testRelationalOperators()
+  local str1 = 'abc'
+  local str2 = 'def'
+
+  lu.assertTrue(str1 < str2)
+  lu.assertTrue(str1 == 'abc')
+  lu.assertTrue(str1 ~= 'Abc')
+end
+
 os.exit( lu.LuaUnit.run() )
