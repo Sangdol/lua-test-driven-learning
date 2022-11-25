@@ -25,9 +25,21 @@ function testComparison()
   lu.assertTrue('a' < 'b')
   lu.assertTrue(c == nil) -- undefined
 
-  -- Only false and nil are false values
+  -- Only `false` and `nil` are false values
   lu.assertTrue(not false)
   lu.assertTrue(not nil)
+end
+
+function localOperators()
+  lu.assertTrue(4 and 5 == 5)
+  lu.assertTrue(nil and 5 == nil)
+  lu.assertTrue(false and 5 == false)
+
+  lu.assertTrue(4 or 5 == 4)
+  lu.assertTrue(nil or 5 == 5)
+
+  lu.assertTrue(not 0 == false)
+  lu.assertTrue(not 4 == false)
 end
 
 function testString()
