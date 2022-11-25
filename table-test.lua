@@ -38,7 +38,6 @@ function testIpairs()
   local sum2 = 0
   local concat2 = ''
   -- it stops at nil
-  -- need to iterate using index and length (#table) to avoid it
   for i, word in ipairs({'a', 'b', nil, 'c'}) do
     sum2 = sum2 + i
     concat2 = concat2 .. word
@@ -46,6 +45,21 @@ function testIpairs()
 
   lu.assertTrue(sum2 == 3)
   lu.assertTrue(concat2 == 'ab')
+
+  -- need to iterate using index and length (#table) to avoid it
+  local sum3 = 0
+  local concat3 = ''
+
+  local t = {'a', 'b', nil, 'c'}
+  for i = 1, #t do
+    sum3 = sum3 + i
+    if t[i] ~= nil then
+      concat3 = concat3 .. t[i]
+    end
+  end
+
+  lu.assertTrue(sum3 == 10)
+  lu.assertTrue(concat3 == 'abc')
 end
 
 function testPairs()
