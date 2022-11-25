@@ -114,13 +114,15 @@ end
 function testTableFunctions()
   local t = {}
   table.insert(t, 'a')
+  table.insert(t, 'b')
 
-  lu.assertEquals(t, {'a'})
+  lu.assertEquals(t, {'a', 'b'})
 
   local c = table.remove(t)
 
-  lu.assertTrue(c == 'a')
-  lu.assertEquals(t, {})
+  -- FILO
+  lu.assertTrue(c == 'b')
+  lu.assertEquals(t, {'a'})
 
   local concat = table.concat({'a', 'b'}, ', ')
   lu.assertTrue(concat == 'a, b')
