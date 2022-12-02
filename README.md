@@ -1,14 +1,10 @@
 Lua Test Driven Learning
 ===
 
-Learn Lua by writing or reading tests.
-
 Installation
 ---
 
-This project uses [LuaUnit](https://github.com/bluebird75/luaunit) which is a unit testing framework for Lua.
-
-[LuaRocks](https://luarocks.org/) is a package manager that you can install LuaUnit.
+This project uses [LuaUnit](https://github.com/bluebird75/luaunit) and [LuaRocks](https://luarocks.org/).
 
 ```sh
 brew install luarocks
@@ -39,24 +35,6 @@ Or you can use the `test.sh` script:
 ./test.sh *lua
 ```
 
-Project Structure
----
-
-```lua
-.
-├── LICENSE
-├── README.md
-├── syntax-test.lua           -- Learning Lua syntax
-├── function-test.lua         -- Learning Lua functions
-├── error-handling-test.lua   -- Learning error handling with Lua
-├── luaunit-test.lua          -- Learning LuaUnit
-├── table-test.lua            -- Learning Lua table
-├── module-test.lua           -- Learning Lua require
-└── modules                   -- Modules that that are used in module-test.lua
-    ├── namespaced.lua
-    └── simple.lua
-```
-
 See also
 ---
 
@@ -64,7 +42,6 @@ See also
 * [Learn X in Y minutes](https://learnxinyminutes.com/docs/lua/)
 * [LuaUnit Documentation](https://luaunit.readthedocs.io/)
 * [Getting started using Lua in Neovim](https://github.com/nanotee/nvim-lua-guide)
-* [Hammerspoon](https://www.hammerspoon.org/)
 
 License
 ---
