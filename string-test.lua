@@ -37,4 +37,18 @@ function testReverse()
   lu.assertTrue(string.reverse(str) == 'cba')
 end
 
+function testLiteralString()
+  lu.assertTrue([[\n]] == '\\n')
+
+  local str = [[
+    This is a
+    multiline string
+  ]]
+
+  lu.assertTrue(str == [[
+    This is a
+    multiline string
+  ]])
+end
+
 os.exit( lu.LuaUnit.run() )
